@@ -2,6 +2,7 @@ package com.raywenderlich.android.lab2.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -39,3 +40,13 @@ fun MyRow() {
         }
     }
 }
+
+/*
+@Composable
+fun RowScope.MyRow() { // This composable is called from inside the Row
+    Text(
+        modifier = Modifier.weight(1 / 3f), // here
+        ...
+    )
+}
+ */
