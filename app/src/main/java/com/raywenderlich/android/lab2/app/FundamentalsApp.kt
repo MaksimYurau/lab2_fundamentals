@@ -6,7 +6,17 @@ import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import com.raywenderlich.android.lab2.router.FundamentalsRouter
 import com.raywenderlich.android.lab2.router.Screen
-import com.raywenderlich.android.lab2.screens.*
+import com.raywenderlich.android.lab2.screens.AlertDialogScreen
+import com.raywenderlich.android.lab2.screens.BoxScreen
+import com.raywenderlich.android.lab2.screens.ColumnScreen
+import com.raywenderlich.android.lab2.screens.ExploreButtonsScreen
+import com.raywenderlich.android.lab2.screens.NavigationScreen
+import com.raywenderlich.android.lab2.screens.ProgressIndicatorScreen
+import com.raywenderlich.android.lab2.screens.RowScreen
+import com.raywenderlich.android.lab2.screens.ScaffoldScreen
+import com.raywenderlich.android.lab2.screens.SurfaceScreen
+import com.raywenderlich.android.lab2.screens.TextFieldScreen
+import com.raywenderlich.android.lab2.screens.TextScreen
 
 @Composable
 fun FundamentalsApp() {
@@ -19,6 +29,11 @@ fun FundamentalsApp() {
                 is Screen.Buttons -> ExploreButtonsScreen()
                 is Screen.ProgressIndicator -> ProgressIndicatorScreen()
                 is Screen.AlertDialog -> AlertDialogScreen()
+                is Screen.Row -> RowScreen()
+                is Screen.Column -> ColumnScreen()
+                is Screen.Box -> BoxScreen()
+                is Screen.Surface -> SurfaceScreen()
+                is Screen.Scaffold -> ScaffoldScreen()
             }
         }
     }
