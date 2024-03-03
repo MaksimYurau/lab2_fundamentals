@@ -37,6 +37,7 @@ fun NavigationScreen() {
             NavigationButton(stringResource(id = R.string.button_container_row), Screen.Row)
             NavigationButton(stringResource(id = R.string.button_container_column), Screen.Column)
             NavigationButton(stringResource(id = R.string.button_container_box), Screen.Box)
+            NavigationButton(stringResource(id = R.string.button_container_surface), Screen.Surface)
         }
     }
 }
